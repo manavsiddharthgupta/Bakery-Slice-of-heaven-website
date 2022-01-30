@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+nav.navigation-bar{
+    width: 100%;
+    height:3rem;
+    padding: 0em 11em;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.486);
+    box-shadow: 0px 5px 10px 0px #aaa;
+    top: 0%;
+    z-index: 99;
+    opacity: 0.90;
+}
+div.navbar{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+}
+div.logo{
+    height: 90%;
+    width: 4rem;
+    
+}
+div.before-hamburger{
+    height: 100%;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div.logo a img.img-logo{
+    width: 100%;
+    height: 100%;
+}
+div.before-hamburger a.berfore-hamburger-list{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.7em;
+    margin-top: 1.7em;
+    font-weight: 600;
+    height: 16px;
+    color: black
+}
+div.main-section{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.24),rgba(255, 255, 255, 0.308)),url(/images/header-image2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.headmain{
+    height: 100%;
+    text-align: center;
+    padding: 6rem 0px 0px 0px;
+}
+h1.head{
+    font-size: 1.4em;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.3rem;
+}
+p.slogan{
+    text-transform: capitalize;
+    letter-spacing: 00.1em;
+    margin-bottom: 0.9rem;
+}
+a.button{
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 600;
+    background-color: #514A9D;
+    padding: 0.8em;
+    border-radius: 15px;
+    color: white;
+}
+.section2{
+    display: flex;
+    padding: 0em 11em;
+    flex-direction: row;
+    height: 290px;
+    margin-top: 2.5rem;
+}
+div.section2 .description{
+    width: 50%;
+    transform: translate(-520px);
+    animation: animdescbox 1s ease-in-out forwards;
+}
+@keyframes animdescbox {
+    100%{
+        transform: translate(0px);
+    }
+}
+.section2 .sec2img{
+    height: 100%;
+    margin-left: 1.2rem;
+    transform: translate(520px);
+    animation: animimgbox 1s ease-in-out forwards;
+}
+@keyframes animimgbox {
+    100%{
+        transform: translate(0px);
+    }
+}
+.description h3{
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    color: rgb(116, 116, 116);
+    margin-bottom: 0.6rem;
+}
+.description h1{
+    font-size: 1.6em;
+    margin-bottom: 0.6rem;
+}
+.description p{
+    font-size: 0.8em;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: rgb(88, 87, 87);
+    line-height: 1.2rem;
+}
+.sec2img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.men{
+    display: none;
+}
+.section3{
+    padding: 0em 11em;
+    margin-top: 6rem;
+    margin-bottom: 4em;
+}
+.sec3imgs{
+    height: 225px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.imgs{
+    width: 30%;
+    position: relative;
+}
+.imgtype{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.overlay{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.61);
+    opacity: 0;
+    display: none;
+}
+.overlayhead{
+    font-size: 1.0em;
+    font-weight: 400;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+a.overlay-button{
+    font-size: 0.8em;
+    padding: 0.6em;
+    background-color: #514A9D;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+}
+.imgs:hover .overlay{
+    opacity: 1;
+    display: block;
+}
+.head-sec3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: gray;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+/* media queries */
+@media (max-width: 1055px){
+    .section2{
+        padding: 0em 8em;
+    }
+}
+@media (max-width: 960px){
+    .section2{
+        padding: 0em 4em;
+    }
+}
+@media (max-width: 830px){
+    .section2{
+        padding: 0em 2em;
+    }
+    .section2 .sec2img{
+        width: 40%;
+    }
+    div.section2 .description{
+        width: 60%;
+    }
+    input.men{
+        display: block;
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        opacity: 0;
+        z-index: 99999;
+    }
+    input{
+        width: 35px;
+        height: 28px;
+    }
+    .navigation-bar{
+        position: relative;
+    }
+    .logo{
+        position: absolute;
+        right: 10%;
+    }
+    div.before-hamburger{
+        flex-direction: column;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 285px;
+        height: 350px;
+        background-color: azure;
+        transform: translateX(-700px);
+        transition: transform 0.5s ease-in-out;
+        z-index: 1;
+        box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.692);
+        justify-content: start;
+        padding-top: 4em;
+    }
+    div.navbar input[type="checkbox"]:checked~ .before-hamburger{
+        transform: translateX(0px);
+    }
+    .menulogo{
+        position: absolute;
+        left: 10.2%;
+        width: 32px;
+        height: 28px;
+        top: 20%;
+        background-color: rgba(170, 170, 170, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 999;
+    }
+    .menulogobar{
+        border: 2px solid black;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .bar1{
+        transform-origin: 0% 0%;
+        transition: transform 0.5s ease-in-out;
+    }
+    .bar3{
+        transform-origin: 0% 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    div.navbar input[type="checkbox"]:checked~ .menulogo .bar1{
+        transform: rotate(-45deg);
+    }
+    div.navbar input[type="checkbox"]:checked~ .menulogo .bar2{
+        display: none;
+    }
+    div.navbar input[type="checkbox"]:checked~ .menulogo .bar3{
+        transform: rotate(45deg);
+    }
+
+}
+@media (max-width: 600px){
+    .section2{
+        padding: 0em 4em;
+        flex-wrap: wrap;
+    }
+    .section2 .sec2img{
+        width: 100%;
+        margin-left: 0rem;
+    }
+    div.section2 .description{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
