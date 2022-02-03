@@ -284,10 +284,81 @@ a.overlay-button{
 .sec5{
     background-color: rgb(243, 243, 243);
     margin-top: 5rem;
-    margin-bottom: 5rem;
-    padding: 1em 9em;
+    margin-bottom: 0rem;
+    padding: 5em 9em;
+}
+.sec6{
+    
+    background-color: rgba(218, 213, 213, 0.733);
+    padding-top: 2rem;
+}
+.contandaddress{
+    margin: 2rem 9rem 0rem 9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.contact-form{
+    width: 400px;
+    padding: 1em;
+    margin-bottom: 3.5rem;
+    background-color: white;
+}
+.add-img{
+    width: 400px;
+    height: 500px;
+}
+.con-head{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.con{
+    margin-top: 1rem;
+}
+.con-name{
+    font-size: 0.9rem;
+    padding: 0.2em;
+    width: 100%;
+    border: 2px solid black;
+
+}
+.con-email{
+    font-size: 0.9rem;
+    padding: 0.2em;
+    width: 100%;
+    border: 2px solid black;
+}
+.con-textarea{
+    width: 100%;
+    border: 2px solid black;
+    padding: 0.2em;
+}
+.contact-submit{
+    text-align: center;
+    margin: 1.2em;
+}
+.con-submit{
+    height: 100%;
+    width: 50%;
+    padding: 0.7em;
+    background-color: #514A9D;
+    color: white;
+    border: 1px solid #514A9D;
+    border-radius: 20px;
+    text-align: center;
+}
+.footer-head{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.footer{
+    padding: 3rem 9rem;
+    background-color: #514A9D;
+}
 
 
 

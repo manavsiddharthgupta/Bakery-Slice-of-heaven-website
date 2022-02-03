@@ -18,11 +18,11 @@
             <input class="men" type="checkbox">
             <div class="before-hamburger">
                 <a class="berfore-hamburger-list b-ham-list1" href="">Home</a>
-                <a class="berfore-hamburger-list b-ham-list2" href="">Contact</a>
-                <a class="berfore-hamburger-list b-ham-list3" href="">About</a>
-                <a class="berfore-hamburger-list b-ham-list4" href="">Menu</a>
-                <a class="berfore-hamburger-list b-ham-list5" href="">Category</a>
-                <a class="berfore-hamburger-list b-ham-list6" href="">Testimonial</a>
+                <a class="berfore-hamburger-list b-ham-list2" href="#contacting">Contact</a>
+                <a class="berfore-hamburger-list b-ham-list3" href="#about">About</a>
+                <a class="berfore-hamburger-list b-ham-list4" href="#menu">Menu</a>
+                <a class="berfore-hamburger-list b-ham-list5" href="#category">Category</a>
+                <a class="berfore-hamburger-list b-ham-list6" href="#testimonial">Testimonial</a>
             </div>
             <div class="menulogo">
                 <div class="menulogobar bar3"></div>
@@ -38,7 +38,7 @@
             <a class="button" href="">MENU</a>
         </div>
     </div>
-    <div class="section2">
+    <div class="section2" id="about">
         <div class="description">
             <h3>About Us</h3>
             <h1>We've been Making Cake For Last 10 Years</h1>
@@ -51,7 +51,7 @@
             <img src="images/restaurant-pic.jpg" alt="bakery-shop">
         </div>
     </div>
-    <div class="section3">
+    <div class="section3" id="category">
         <h2 class="head-sec3">TYPES OF FOOD</h2>
         <div class="sec3imgs">
             <div class="imgs imgs1">
@@ -80,7 +80,7 @@
 
         </div>
     </div>
-    <div class="sec4">
+    <div class="sec4" id="menu">
         <h2 class="headsec4">FOOD MENU</h2>
         <div class="menuitem">
             <div class="eachmenu menu-item1">
@@ -145,7 +145,7 @@
             </div>
         </div>
     </div>
-    <div class="sec5">
+    <div class="sec5" id="testimonial">
         <h2 class="sec5head">What Our Customer Says</h2>
         <div class="sec5temp">
             <div class="customerdesc customer1">
@@ -168,6 +168,70 @@
             </div>
         </div>
     </div>
+    <div class="sec6" id="contacting">
+        <div class="contandaddress">
+            <div class="address">
+                <img class="add-img" src="/images/bakeryshop.jpg" alt="address">
+            </div>
+            <div class="contact-form">
+                <div class="con contact-form-head">
+                    <h3 class="con-head">Contact Form</h3>
+                </div>
+                <div class="con contact-name">
+                    <input class="con-name" type="text" required placeholder="Name">
+                </div>
+                <div class="con contact-email">
+                    <input class="con-email" type="email" required placeholder="E-mail">
+                </div>
+                <div class="con contact-message">
+                    <textarea class="con-textarea" name="" id="" cols="18" rows="15" placeholder="Message"></textarea>
+                </div>
+                <div class="con contact-submit">
+                    <input class="con-submit" type="submit">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec7">
+        <div class="footer">
+            <h4 class="footer-head">Restraunt Website &copy; 2020, all right reserved &reg;</h4>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </body>
 
 </html>
